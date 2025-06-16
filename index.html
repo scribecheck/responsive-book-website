@@ -21,7 +21,7 @@
    <body>
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
-         <nav class="nav container"></nav>
+         <nav class="nav container">
          <a href="#" class="nav__logo">
             <i class="ri-book-3-line"></i>E-Book
          </a>
@@ -64,7 +64,7 @@
                </li>
             </ul>
          </div>
-         
+               
          <div class="nav__actions">
             <!-- Search button -->
              <i class="ri-search-line search-button" id="search-button"></i>
@@ -75,16 +75,41 @@
             <!-- Theme button -->
               <i class="ri-moon-line change-theme" id="theme-button"></i>
          </div>
-      </header>
+       </nav>
+   </header>
 
       <!--==================== SEARCH ====================-->
       <div class="search" id="search-content">
-         
+         <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="Search by title or tags" class="search__input">
+         </form>
+
+         <i class="ri-close-line search__close" id="search-close"></i>
       </div>
 
       <!--==================== LOGIN ====================-->
       <div class="login grid" id="login-content">
-         
+         <form action="" class="login__form grid">
+            <h3 class="login__title">Log In</h3>
+
+            <div class="login__group grid"></div>
+            <div>
+               <label for="login-email" class="login__label">Email</label>
+               <input type="email" placeholder="Enter your email" id="login-email" class="login__input">
+            </div>
+
+            <div>
+               <label for="login-pass" class="login__label">Password</label>
+               <input type="password" placeholder="Enter your password" id="login-pass" class="login__input">
+            </div>
+
+            <div>
+               <span class="login__signup">
+                  Don't have an account?<a href="#">Sign up</a>
+               </span>
+            </div>
+         </form>
       </div>
 
       <!--==================== MAIN ====================-->
